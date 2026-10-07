@@ -1,0 +1,6 @@
+{
+  "name": "WatchFlix",
+  "description": "A sleek Wear OS video streaming catalog and player for circular smartwatch displays.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
