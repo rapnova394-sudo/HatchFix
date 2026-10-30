@@ -1,0 +1,10 @@
+<script>
+export default {
+  onCreate() {
+    console.log("NEXORA AI created")
+  },
+  onDestroy() {
+    console.log("NEXORA AI destroyed")
+  }
+}
+</script>
