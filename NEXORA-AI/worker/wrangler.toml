@@ -1,0 +1,7 @@
+name = "nexora-ai-api"
+main = "worker.js"
+compatibility_date = "2026-10-30"
+
+[vars]
+GROQ_MODEL = "llama-3.3-70b-versatile"
+ALLOWED_ORIGIN = "https://nexora.invalid"
