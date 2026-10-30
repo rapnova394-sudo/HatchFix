@@ -1,0 +1,128 @@
+<template>
+  <div class="page">
+    <div class="header">
+      <text class="logo">NEXORA</text>
+      <text class="subtitle">ARTIFICIAL INTELLIGENCE</text>
+    </div>
+
+    <div class="assistant">
+      <text class="symbol">✦</text>
+      <text class="welcome">Hola.</text>
+      <text class="description">Soy NEXORA AI.</text>
+      <text class="description">¿En qué puedo ayudarte?</text>
+    </div>
+
+    <div class="conversation">
+      <text class="status">ASISTENTE</text>
+      <text class="message">{{message}}</text>
+    </div>
+
+    <div class="footer">
+      <text class="connection">● LISTA PARA CONECTAR</text>
+      <text class="version">VERSION 0.1.0</text>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  private: {
+    message: "Abre Notify en tu móvil para conectar el asistente."
+  },
+
+  onInit() {
+    console.log("NEXORA AI initialized")
+  }
+}
+</script>
+
+<style>
+.page {
+  flex-direction: column;
+  background-color: #050912;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.header {
+  height: 65px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  color: #45baff;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.subtitle {
+  color: #66829e;
+  font-size: 7px;
+  margin-top: 3px;
+}
+
+.assistant {
+  height: 175px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.symbol {
+  color: #45baff;
+  font-size: 36px;
+}
+
+.welcome {
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.description {
+  color: #9bb4cc;
+  font-size: 11px;
+  margin-top: 4px;
+}
+
+.conversation {
+  height: 125px;
+  background-color: #101d30;
+  border-radius: 12px;
+  padding: 10px;
+  flex-direction: column;
+}
+
+.status {
+  color: #45baff;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.message {
+  color: #ffffff;
+  font-size: 13px;
+  margin-top: 12px;
+}
+
+.footer {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.connection {
+  color: #58d99b;
+  font-size: 9px;
+}
+
+.version {
+  color: #61758c;
+  font-size: 8px;
+  margin-top: 5px;
+}
+</style>
